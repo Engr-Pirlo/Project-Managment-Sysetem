@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500;1,700;1,800&family=Titan+One&display=swap');
+
+*{
+    padding: 0 ;
+    margin: 0;
+    top: 0;
+    left: 0;
+    
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(233, 230, 230);
+   
+    
+}
+
+.loging-card{
+    background-image: url(./Companents/img/bg/Triangle-2.png);
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.loging-card2{
+    background-image: url(./Companents/img/bg/Triangle-1.png);
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.row-Card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.btn-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr   ;
+   
+    gap: 1rem;
+    
+}
+
+
+
+@media screen and (max-width:768px) {
+    .row-Card{
+        display: grid;
+        grid-template-columns: 1fr ;
+        width: 100%;
+    }
+    .btn-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  ;
+       
+        gap: 1rem;
+        
+    }
+}
